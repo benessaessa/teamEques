@@ -217,3 +217,22 @@ footer img{
     height: 75px;
   }
 }
+/* ================= Scroll ===================== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(60, 100, 7); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(31, 53, 2); 
+}

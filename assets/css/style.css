@@ -34,7 +34,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button,body ,*{
 .first_section{
   background: url(../images/imgbg.png) no-repeat;
   background-size: cover;
-  height: 100vh;
+  min-height: 40vh;
 }
 .first_section .navbar-toggler{
   background-color: rgba(166, 166, 65, 0.85);
@@ -177,6 +177,11 @@ footer img{
   object-fit: cover;
 }
 /* ============================media querires =========*/
+@media screen  and (min-width:768px){
+  .first_section{
+    height: 100vh;
+  }
+}
 @media screen and (max-width:900px) {
   .text_absolute .content ,.text_absolute .content_qoute{
     font-size: 20px;

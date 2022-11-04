@@ -66,8 +66,12 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button,body ,*{
 .first_section .navbar-nav .nav-item .nav-link {
   color: #A6A641;
   font-size: 18px;
+  font-weight: bold;
   text-transform: capitalize;
   padding-right: 1.2rem;
+}
+.first_section .navbar-nav .nav-item .nav-link:hover {
+  color: #a1a120;
 }
 .first_section .navbar-nav .dropdown:hover .dropdown-menu{
   display: block;
@@ -88,6 +92,21 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button,body ,*{
 .about{
   background-color: #F8F4EC;
   padding: 75px 0;
+}
+.bg_about{
+  background: url(../images/imge4.png) no-repeat;
+  background-position:center;
+  background-size: cover;
+  /* padding: 2rem 0.5rem; */
+}
+.bg_about .bg_opacity{
+  background: rgba(179, 187, 179, 0.733);
+  padding-bottom: 1rem;
+}
+.img_team{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 /* ====================== images hourses ==================== */
 .images{
@@ -279,8 +298,9 @@ footer img{
   font-family: 'Economica', sans-serif;
 }
 .schedule{
-  background: url(../images/schedule.png) no-repeat;
+  background: url(../images/imge2.png) no-repeat;
   background-size: cover;
+  background-position: bottom;
 }
 .img_geld{
   width: 100%;

@@ -1,0 +1,214 @@
+.font-size-12{
+  font-size: 12px;
+}
+.font-size-16{
+  font-size: 14px;
+}
+.font-size-16{
+  font-size: 16px;
+}
+.font-size-18{
+  font-size: 18px;
+}
+.font-size-20{
+  font-size: 20px;
+}
+.link_hover{
+  text-decoration: none;
+}
+.link_hover img{
+  border-radius: 10px;
+}
+.link_hover:hover{
+  text-decoration: underline;
+}
+.bg_green{
+  background-color: #303500;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+h1,h2,h3,h4,h5,h6,p,a,span,label,button,body ,*{
+  font-family: 'Lato', sans-serif;
+}
+/* ====================== First Section============== */
+.first_section{
+  background: url(../images/imgbg.png) no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.first_section .navbar-toggler{
+  background-color: rgba(166, 166, 65, 0.85);
+  color: white;
+}
+.first_section .navbar-nav .dropdown .dropdown-menu{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  overflow: hidden;
+  border: none;
+  min-width: 14rem;
+}
+.first_section .navbar-nav .dropdown .dropdown-item{
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  font-size: 15px;
+  /* color: black; */
+  color: #A6A641;
+  transition: all 0.2s ease-in-out;
+}
+.first_section .navbar-nav .dropdown .dropdown-item:hover{
+  padding-left: 20px;
+  transition: all 0.2s ease-in-out;
+}
+.first_section .navbar-nav .dropdown .dropdown-item:focus{
+  background-color: #F8F4EC;
+}
+.first_section .navbar-nav .nav-item .nav-link {
+  color: #A6A641;
+  font-size: 18px;
+  text-transform: capitalize;
+  padding-right: 1.2rem;
+}
+.first_section .navbar-nav .dropdown:hover .dropdown-menu{
+  display: block;
+}
+.first_section .navbar-nav .dropdown-menu{
+  margin-top: 0;
+}
+.img_logo{
+  position: absolute;
+  top: 3rem;
+  left: 13rem;
+}
+.list-group .list-group-item-action{
+  border: none;
+  color: #A6A641;
+}
+/* ======================= About ======================= */
+.about{
+  background-color: #F8F4EC;
+  padding: 75px 0;
+}
+/* ====================== images hourses ==================== */
+.images{
+  background: url(../images/contact_back.jpg);
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+/* ======================================== */
+.text_absolute{
+  margin: 0;
+  position: absolute;
+  padding-left: 13%;
+  padding-right: 13%;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: white;
+}
+.text_absolute .content{
+  font-size: 27px;
+}
+.text_absolute .content_qoute{
+  text-align: center;
+  font-size: 30px;
+}
+.text_absolute .content_qoute:before {
+  content: "\2014 \00A0";
+  font-size: 30px;
+}
+.imgText , .imgTide{
+  width: 100%;
+  height: 100%;
+}
+.image_ride{
+  background: url(../images/quote_text_back.png);
+  background-size: 100%;
+  position: relative;
+}
+/* =========== Contact Us =============== */
+.contact_us{
+  background: url(../images/contact_back.jpg);
+}
+.form_submit{
+  background: url(../images/form_back.png);
+}
+.form_submit .form-control{
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-radius: 0px;
+  background-color: inherit;
+  border-bottom: 2px solid #67461E;
+}
+.form_submit .form-control:focus{
+  background-color: inherit;
+  box-shadow: none;
+}
+.form_submit .btnSend{
+  width: 170px;
+  text-align: center;
+  border-radius: 35px;
+  padding: 0.7rem;
+  font-size: 20px;
+  color: #F9F6EE;
+  background-color: #442700;
+}
+.form_submit .btnSend:hover{
+  background-color: #774400;
+  color: white;
+}
+.contact_info{
+  background: url(../images/contact_info_back.png) no-repeat;
+  object-fit: cover;
+  background-size: 100%;
+}
+.social a{
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.5rem 0.7rem;
+  margin: 0.5rem;
+}
+.social .fa{
+  color: white;
+}
+/* ============================ Footer ================= */
+footer img{
+  width: 100%;
+  object-fit: cover;
+}
+/* ============================media querires =========*/
+@media screen and (max-width:900px) {
+  .text_absolute .content ,.text_absolute .content_qoute{
+    font-size: 20px;
+  }
+  .img_logo{
+    left: 10rem;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .images{
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .image_ride{
+    min-height: 350px;
+    object-fit: cover;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .text_absolute{
+    font-size: 16px;
+  }
+  .imgText{
+    height: 22rem;
+  }
+  .img_logo{
+    left: 5rem;
+    width: 120px;
+  }
+  .logo{
+    height: 75px;
+  }
+}

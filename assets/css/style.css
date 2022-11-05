@@ -49,12 +49,18 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button,body ,*{
   min-width: 14rem;
 }
 .first_section .navbar-nav .dropdown .dropdown-item{
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
   font-size: 15px;
   /* color: black; */
   color: #A6A641;
   transition: all 0.2s ease-in-out;
+}
+.first_section .navbar-nav .dropdown-menu li:first-child .dropdown-item{
+  padding-top: 1rem;
+}
+.first_section .navbar-nav .dropdown-menu li:last-child .dropdown-item{
+  padding-bottom: 1rem;
 }
 .first_section .navbar-nav .dropdown .dropdown-item:hover{
   padding-left: 20px;
@@ -299,7 +305,7 @@ footer img{
   height: 0.4rem;
   margin-top: -0.2rem;
 }
-.page_child h4 ,.page_child p{
+.page_child h4 ,.page_child p ,.page_child h5 ,.page_child h3{
   font-family: 'Economica', sans-serif;
 }
 .schedule{
@@ -317,40 +323,63 @@ footer img{
   position: relative;
   overflow: hidden;
 }
-.swiper-container {
+.hydortherapy .swiper-container {
   width: 100%;
 }
-.swiper-slide {
+.hydortherapy .swiper-slide {
   width: 80%;
   height: 350px;
 }
-.swiper-container .swiper-slide .slider-box {
+.hydortherapy .swiper-container .swiper-slide .slider-box {
   position: relative;
   width: 100%;
   padding: 40px;
   padding-top: 90px;
   color: #999;
 }
-.swiper-slide .slider-box .img {
+.hydortherapy .swiper-slide .slider-box .img {
   position: absolute;
   top: 20px;
   right: 30px;
   max-width: 100%;
   width: 100%;
 }
-.swiper-3d .swiper-slide-shadow-left,
-.swiper-3d .swiper-slide-shadow-right {
+.hydortherapy .swiper-3d .swiper-slide-shadow-left,
+.hydortherapy .swiper-3d .swiper-slide-shadow-right {
   background-image: none;
 }
-.swiper-slide-prev, 
-.swiper-slide-next, 
-.swiper-slide
+.hydortherapy .swiper-slide-prev, 
+.hydortherapy .swiper-slide-next, 
+.hydortherapy .swiper-slide
 {
   filter: blur(4px);
   -webkit-filter: blur(4px);
 }
-.swiper-slide-active {
+.hydortherapy .swiper-slide-active {
   filter: none;
   -webkit-filter: none;
 }
 /* ======================== End of hydrotherapy ===================== */
+.img_horse{
+  width: 100%;
+  object-fit: cover;
+  height: 500px;
+}
+/* ================== Location =================== */
+.bg_location{
+  background: url(../images/location2.png) no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+.bg_location .bg_opacity_location{
+  background: rgba(65, 68, 65, 0.432);
+  padding-bottom: 1rem;
+}
+.bg_location .bg_opacity_location ul li p ,.bg_location .bg_opacity_location ul li{
+  color: white;
+}
+.img_slide{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}

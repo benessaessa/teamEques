@@ -8,7 +8,7 @@ $(document).ready(function(){
     });
 });
 //  Swiper Effect --------------------------------------
-let swiper = new Swiper('.swiper-container', {
+var swiper1 = new Swiper('.swiper-container', {
     effect: 'coverflow',
     navigation: {
       nextEl: ".swiper-button-next",
@@ -25,4 +25,53 @@ let swiper = new Swiper('.swiper-container', {
       slideShadows: true,
     },
     loop: true 
+});
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+    spaceBetween: 30,
+    loopedSlides: 4,
+    // pagination: {
+    //     el: ".sale .swiper-pagination",
+    //     clickable: true,
+    // },
+    autoplay: {
+        delay: 3000
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+        el: '.sale .pagination-container',
+        clickable: true,
+  },
+  breakpoints: {
+    300: {
+        mousewheel: true,
+        keyboard: true,
+        slidesPerView: 1,
+        spaceBetween: 24,
+        allowSlidePrev: true,
+        allowSlideNext: true,
+        loopedSlides: 1,
+    },
+    400: {
+        slidesPerView: 2,
+        spaceBetween: 24,
+        allowSlidePrev: true,
+        allowSlideNext: true,
+        loopedSlides: 1,
+    },
+    640: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        loopedSlides: 1,
+        allowSlidePrev: true,
+        allowSlideNext: true
+    },
+    1200: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loopedSlides: 4,
+    }
+},
 });

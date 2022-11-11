@@ -18,7 +18,12 @@
   text-decoration: none;
 }
 .link_hover img{
+  transition: all 0.5s ease-in-out;
   border-radius: 10px;
+  box-shadow: 1px 1px 13px 2px rgb(248 221 198 / 80%);
+}
+.link_hover img:hover{
+  margin-top: -1rem;
 }
 .link_hover:hover{
   text-decoration: underline;
@@ -29,13 +34,22 @@
   padding-bottom: 5rem;
 }
 h1,h2,h3,h4,h5,h6,p,a,span,label,button,body ,*{
-  font-family: 'Lato', sans-serif;
+  font-family: economica;
 }
 /* ====================== First Section============== */
 .first_section{
-  background: url(../images/imgbg.png) no-repeat;
-  background-size: cover;
-  min-height: 40vh;
+  min-height: 100vh;
+}
+#myVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
 .first_section .navbar-toggler{
   background-color: rgba(166, 166, 65, 0.85);

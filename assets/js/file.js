@@ -6,6 +6,14 @@ $(document).ready(function(){
             dropdownMenu.parent().toggleClass("open");
         }
     });
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 50) {
+            $(".background_sticky").addClass("bg_header");
+        } else {
+            //remove the background property so it comes transparent again (defined in your css)
+           $(".background_sticky").removeClass("bg_header");
+        }
+    });
 });
 //  Swiper Effect --------------------------------------
 var swiper1 = new Swiper('.swiper-container', {

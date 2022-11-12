@@ -1,4 +1,7 @@
+/* ===================== General style ==================== */
+
 @import url('https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400&display=swap');
+
 .font-size-12{
   font-size: 12px;
 }
@@ -36,9 +39,22 @@
 h1,h2,h3,h4,h5,h6,p,a,span,label,button,body ,*{
   font-family: economica;
 }
+/* ============================== General header ================ */
+.page_child .first_section{
+  height: unset;
+  min-height: unset;
+}
 /* ====================== First Section============== */
+
 .first_section{
   min-height: 100vh;
+}
+.first_section .bg_header{
+  background-color: rgba(255, 255, 255, 0.21);
+  /* background-color: rgb(255 255 255 / 80%); */
+  box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
 }
 #myVideo {
   width: 100vw;
@@ -65,7 +81,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button,body ,*{
 .first_section .navbar-nav .dropdown .dropdown-item{
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
-  font-size: 15px;
+  font-size: 18px;
   /* color: black; */
   color: #A6A641;
   transition: all 0.2s ease-in-out;
@@ -78,6 +94,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button,body ,*{
 }
 .first_section .navbar-nav .dropdown .dropdown-item:hover{
   padding-left: 20px;
+  font-weight: bold;
   transition: all 0.2s ease-in-out;
 }
 .first_section .navbar-nav .dropdown .dropdown-item:focus{
@@ -108,7 +125,9 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button,body ,*{
   border: none;
   color: #A6A641;
 }
+
 /* ======================= About ======================= */
+
 .about{
   background-color: #F8F4EC;
   padding: 75px 0;
@@ -128,12 +147,15 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button,body ,*{
   height: 300px;
   object-fit: cover;
 }
+
 /* ====================== images hourses ==================== */
+
 .images{
   background: url(../images/contact_back.jpg);
   padding-top: 8rem;
   padding-bottom: 5rem;
 }
+
 /* ======================================== */
 .text_absolute{
   margin: 0;
@@ -165,7 +187,9 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button,body ,*{
   background-size: 100%;
   position: relative;
 }
+
 /* =========== Contact Us =============== */
+
 .contact_us{
   background: url(../images/contact_back.jpg);
 }
@@ -211,14 +235,17 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button,body ,*{
 .social .fa{
   color: white;
 }
+
 /* ============================ Footer ================= */
+
 footer img{
   width: 100%;
   object-fit: cover;
 }
+
 /* ============================media querires =========*/
 @media screen  and (min-width:768px){
-  .first_section{
+  .header_home .first_section{
     height: 100vh;
   }
 }
@@ -287,9 +314,10 @@ footer img{
 }
 .header{
   background-color: rgba(255, 255, 255, 0.21);
+  /* background-color: rgb(255 255 255 / 80%); */
   box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
   border: 1px solid rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(10px);
 }
 .btn_group .btn_contact{
   background: #919136;
@@ -332,7 +360,7 @@ footer img{
   height: 200px;
   object-fit: cover;
 }
-/* ---- Swiper Effect ------ */
+/* ---- Swiper Effec page hydortherapy ------ */
 .hydortherapy {
   position: relative;
   overflow: hidden;
@@ -397,3 +425,4 @@ footer img{
   height: 300px;
   object-fit: cover;
 }
+

@@ -1,4 +1,5 @@
 AOS.init();
+document.getElementById('myVideo').play();
 $(document).ready(function(){
     $("first_section .navbar .navbar-nav .dropdown").hover(function(){
         var dropdownMenu = $(this).children(".dropdown-menu");

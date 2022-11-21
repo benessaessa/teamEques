@@ -1,5 +1,4 @@
 AOS.init();
-document.getElementById('myVideo').play();
 $(document).ready(function(){
     $("first_section .navbar .navbar-nav .dropdown").hover(function(){
         var dropdownMenu = $(this).children(".dropdown-menu");
@@ -36,7 +35,7 @@ var swiper1 = new Swiper('.swiper-container', {
     loop: true 
 });
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".swiper", {
   slidesPerView: 3,
     spaceBetween: 30,
     loopedSlides: 4,

@@ -133,13 +133,13 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button,body ,*{
   padding: 75px 0;
 }
 .bg_about{
-  background: url(../images/imge4.png) no-repeat;
+  background: url(../images/teamBg.png) no-repeat;
   background-position:center;
   background-size: cover;
   /* padding: 2rem 0.5rem; */
 }
 .bg_about .bg_opacity{
-  background: rgba(179, 187, 179, 0.733);
+  background: rgba(107, 143, 107, 0.733);
   padding-bottom: 1rem;
 }
 .img_team{
@@ -147,7 +147,17 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button,body ,*{
   height: 300px;
   object-fit: cover;
 }
-
+/* ====================== Fitness ========================== */
+.bg_fitness{
+  background: url(../images/fitness.png) no-repeat;
+  background-position:center;
+  background-size: cover;
+  /* padding: 2rem 0.5rem; */
+}
+.bg_fitness .bg_opacity{
+  background: rgba(107, 143, 107, 0.733);
+  padding-bottom: 1rem;
+}
 /* ====================== images hourses ==================== */
 
 .images{
@@ -246,6 +256,9 @@ footer img{
 /* ============================media querires =========*/
 @media screen  and (min-width:768px){
   .header_home .first_section{
+    height: 100vh;
+  }
+  .hydortherapy{
     height: 100vh;
   }
 }
@@ -361,7 +374,7 @@ footer img{
   object-fit: cover;
 }
 /* ---- Swiper Effec page hydortherapy ------ */
-.hydortherapy {
+/* .hydortherapy {
   position: relative;
   overflow: hidden;
 }
@@ -400,7 +413,7 @@ footer img{
 .hydortherapy .swiper-slide-active {
   filter: none;
   -webkit-filter: none;
-}
+} */
 /* ======================== End of hydrotherapy ===================== */
 .img_horse{
   width: 100%;
@@ -409,7 +422,7 @@ footer img{
 }
 /* ================== Location =================== */
 .bg_location{
-  background: url(../images/location2.png) no-repeat;
+  background: url(../images/location_facilities.jpg) no-repeat;
   background-position:center;
   background-size: cover;
 }

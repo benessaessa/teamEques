@@ -116,6 +116,9 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button,body ,*{
 .first_section .navbar-nav .dropdown-menu{
   margin-top: 0;
 }
+.newSection .first_section{
+  min-height: 100vh;
+}
 .img_logo{
   position: absolute;
   top: 3rem;

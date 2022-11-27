@@ -74,8 +74,8 @@
                   Training
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="training">
-                  <li><a class="dropdown-item" href="#">For Your Horse</a></li>
-                  <li><a class="dropdown-item" href="#">For You</a></li>
+                  <li><a class="dropdown-item" href="forhorse.html">For Your Horse</a></li>
+                  <li><a class="dropdown-item" href="foryou.html">For You</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -88,11 +88,18 @@
                   <li><a class="dropdown-item" href="livery.html">Livery</a></li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">Our Horses</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="horses" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Our Horses
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="horses">
+                  <li><a class="dropdown-item" href="intraining.html">In Training</a></li>
+                  <li><a class="dropdown-item" href="forsale.html">For Sale</a></li>
+                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contactus">Contact Us</a>
+                <a class="nav-link" href="index.html#contactus">Contact Us</a>
               </li>
               <li class="nav-item btn_group ms-lg-5">
                 <a href="#" class="nav-link btn text-white btn_contact px-sm-4">Download App</a>
@@ -110,14 +117,59 @@
     </div>
     <div class="offcanvas-body">
       <div class="list-group">
-        <a href="about.html" class="list-group-item list-group-item-action" aria-current="true">
+        <!-- <a href="about.html" class="list-group-item list-group-item-action" aria-current="true">
+          About Us
+        </a> -->
+        <a class="list-group-item list-group-item-action border-0" href="about.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
           About Us
         </a>
-        <a href="livery.html" class="list-group-item list-group-item-action">Livery</a>
-        <a href="clinics.html" class="list-group-item list-group-item-action">Training</a>
-        <a href="hydrotherapy.html" class="list-group-item list-group-item-action">Hydrotherapy</a>
-        <a href="location.html" class="list-group-item list-group-item-action">Location & Facilities</a>
-        <a href="fitness.html" class="list-group-item list-group-item-action">Fitness</a>
+        <ul class="dropdown-menu border-0 pt-0 pb-3" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item list-group-item-action" href="about.html">Ethos</a></li>
+          <li><a class="dropdown-item list-group-item-action" href="about.html">Team & Partners</a></li>
+          <li><a class="dropdown-item list-group-item-action" href="location.html">Location & Facilities</a></li>
+        </ul>
+        <a class="list-group-item list-group-item-action border-0" href="#" id="rider" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Rider Fitness
+        </a>
+        <ul class="dropdown-menu border-0 pt-0 pb-3" aria-labelledby="rider">
+          <li><a class="dropdown-item list-group-item-action" href="fitness.html">Digital Fitness Solutions</a></li>
+          <li><a class="dropdown-item list-group-item-action" href="clinics.html">Clinics</a></li>
+          <li><a class="dropdown-item list-group-item-action" href="clinics.html">Products & Services</a></li>
+        </ul>
+        <a class="list-group-item list-group-item-action border-0" href="livery.html" id="livery" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          livery
+        </a>
+        <ul class="dropdown-menu border-0 pt-0 pb-3" aria-labelledby="livery">
+          <li><a class="dropdown-item list-group-item-action" href="hydrotherapy.html">Rehab & Conditioning</a></li>
+          <li><a class="dropdown-item list-group-item-action" href="livery.html">Livery Options</a></li>
+        </ul>
+        <a class="list-group-item list-group-item-action border-0" href="#" id="training" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Training
+        </a>
+        <ul class="dropdown-menu border-0 pt-0 pb-3" aria-labelledby="training">
+          <li><a class="dropdown-item list-group-item-action" href="forhorse.html">For Your Horse</a></li>
+          <li><a class="dropdown-item list-group-item-action" href="foryou.html">For You</a></li>
+        </ul>
+        <a class="list-group-item list-group-item-action border-0" href="#" id="center" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          The Hydrotherapy Center
+        </a>
+        <ul class="dropdown-menu border-0 pt-0 pb-3" aria-labelledby="center">
+          <li><a class="dropdown-item list-group-item-action" href="hydrotherapy.html">Rehabilitation</a></li>
+          <li><a class="dropdown-item list-group-item-action" href="hydrotherapy.html">Conditioning</a></li>
+          <li><a class="dropdown-item list-group-item-action" href="livery.html">Livery</a></li>
+        </ul>
+        <a class="list-group-item list-group-item-action border-0" href="#" id="ourhorses" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Our Horses
+        </a>
+        <ul class="dropdown-menu border-0 pt-0 pb-3" aria-labelledby="ourhorses">
+          <li><a class="dropdown-item list-group-item-action" href="intraining.html">In Training</a></li>
+          <li><a class="dropdown-item list-group-item-action" href="forsale.html">For Sale</a></li>
+        </ul>
+        <a href="#index.html#contactus" class="list-group-item list-group-item-action">Contact Us</a>
         <a href="#" class="list-group-item list-group-item-action">Download App</a>
       </div>
     </div>
@@ -154,6 +206,38 @@
           <div class="col-md-4 col-sm-6 pb-2">
             <img src="assets/images/rehab6.png" class="img_team" data-aos="fade-up" data-aos-delay="300"
               data-aos-duration="3000">
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="bg-white pb-5">
+    <div class="container">
+        <h4 class="fw-bold">Conditioning </h4>
+        <div class="row py-2">
+          <div class="col-lg-5">
+            <h4 class="title_text">BESPOKE LIVERY PACKAGES</h4>
+          </div>
+        </div>
+        <div class="row py-3">
+          <div class="col-md-4 col-sm-6 pb-2">
+            <img src="assets/images/condition2.png" class="img_team" data-aos="fade-up" data-aos-delay="100"
+              data-aos-duration="1000">
+          </div>
+          <div class="col-md-4 col-sm-6 pb-2">
+            <img src="assets/images/condition4.png" class="img_team" data-aos="fade-up" data-aos-delay="200"
+              data-aos-duration="2000">
+          </div>
+          <div class="col-md-4 col-sm-6 pb-2">
+            <img src="assets/images/condition3.png" class="img_team" data-aos="fade-up" data-aos-delay="300"
+              data-aos-duration="3000">
+          </div>
+          <div class="col-md-4 col-sm-6 pb-2">
+            <img src="assets/images/hydro1.png" class="img_team" data-aos="fade-up" data-aos-delay="100"
+              data-aos-duration="1000">
+          </div>
+          <div class="col-md-4 col-sm-6 pb-2">
+            <img src="assets/images/condition1.png" class="img_team" data-aos="fade-up" data-aos-delay="200"
+              data-aos-duration="2000">
           </div>
         </div>
     </div>
